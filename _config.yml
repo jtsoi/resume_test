@@ -7,9 +7,9 @@ contact_phone: 08-400 250 20
 contact_email: contact@bigdata.se
 
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/resume_test/" # the subpath of your site, e.g. /blog/
 
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://jtsoi.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
