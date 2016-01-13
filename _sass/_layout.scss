@@ -1,0 +1,88 @@
+// Custom grid width
+.grid-container {
+  max-width: 960px;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+blockquote, hr, table,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+p {
+  margin-bottom: 6px;
+}
+
+// U Lists
+ul {
+    padding-left: 20px;
+    list-style: disc;
+
+    li {
+        margin: 4px 0;
+    }
+}
+
+.logo-container{
+  margin: 40px 0;
+  .logo{
+    float: right;
+    display: inline-block;
+    width: 124px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/jpeg;base64,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');
+  }
+}
+
+.resume-footer{
+  text-align: center;
+}
+
+hr {
+  width: 95%;
+  height: 1px;
+  max-width: 945px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 0;
+  background: #aaa;
+}
+
+// Name
+.resume header{
+  margin-bottom: 30px;
+  h1 {
+    margin-bottom: 0px;
+  }
+  h2{
+    margin-bottom: 0px;
+    font-style: italic;
+  }
+}
+
+
+// Resume side headers
+.resume .content{
+  padding-top: 6px;
+  margin-bottom: 15px;
+  h4{
+    margin-bottom: 2px;
+  }
+  .period{
+    text-align: right;
+    margin-bottom: 2px;
+  }
+}
+
+.org-description p{
+  font-style: italic;
+}
+
+.role-description p{
+
+}

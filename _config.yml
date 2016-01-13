@@ -1,0 +1,20 @@
+# Site settings
+
+company_name: Big Data AB
+address_1: Sveavägen 9, 17th Floor
+address_2: 111 57 Stockholm
+contact_phone: 08-400 250 20
+contact_email: contact@bigdata.se
+
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Makefile
+  - readme.md
+  - .gitignore

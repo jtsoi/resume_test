@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+<article class="resume">
+
+  <section class="grid-container">
+    <header class="grid-75 prefix-25">
+      <h1>
+        {{ site.data.profile.name }}
+      </h1>
+      <h2>
+        {{ site.data.profile.job_title }}
+      </h2>
+      <h6>{{ site.data.profile.phone }} || {{ site.data.profile.email }}</h6>
+    </header>
+  </section>
+  <hr>
+  <section class="grid-container">
+    <div class="grid-25">
+      <h3>
+        Introduction
+      </h3>
+    </div>
+    <div class="grid-75 content">
+      {{ site.data.profile.introduction | markdownify }}
+    </div>
+  </section>
+  <hr>
+
+  <section class="grid-container">
+    <div class="grid-25">
+      <h3>
+        Skills
+      </h3>
+    </div>
+    <div class="grid-75 grid-parent content">
+      {% for skill_category in site.data.profile.skills %}
+        <div class="grid-33">
+          <h4>
+            {{ skill_category.name }}
+          </h4>
+          <ul>
+            {% for skill in skill_category.skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  <hr>
+
+  <section class="grid-container">
+    <div class="grid-25">
+      <h3>
+        Projects
+      </h3>
+    </div>
+    <div class="grid-75 grid-parent content">
+      {% for project in site.data.profile.projects %}
+      <div class="grid-66">
+        <h4>{{ project.name }}</h4>
+      </div>
+      <div class="grid-33">
+        <h5 class="period">{{ project.period }}</h5>
+      </div>
+      <div class="grid-100 org-description">
+        {{ project.org_description | markdownify }}
+      </div>
+      <div class="grid-100 role-description">
+        {{ project.role_description | markdownify }}
+      </div>
+      {% if project.technologies %}
+      <h5 class="grid-100">Technologies used</h5>
+      <ul class="grid-100 grid-parent">
+        {% for tech in project.technologies %}
+        <li class="grid-33">{{ tech }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <hr>
+
+  <section class="grid-container">
+    <div class="grid-25">
+      <h3>
+        Employments
+      </h3>
+    </div>
+    <div class="grid-75 grid-parent content">
+      {% for employment in site.data.profile.employments %}
+      <div class="grid-66">
+        <h4>{{ employment.name }}</h4>
+      </div>
+      <div class="grid-33">
+        <h5 class="period">{{ employment.period }}</h5>
+      </div>
+      <div class="grid-100 org-description">
+        {{ employment.org_description | markdownify }}
+      </div>
+      <div class="grid-100 role-description">
+        {{ employment.role_description | markdownify }}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <hr>
+
+  <section class="grid-container">
+    <div class="grid-25">
+      <h3>
+        Education
+      </h3>
+    </div>
+    <div class="grid-75 grid-parent content">
+      {% for education in site.data.profile.education %}
+      <div class="grid-66">
+        <h4>{{ education.name }}</h4>
+      </div>
+      <div class="grid-33">
+        <h5 class="period">{{ education.period }}</h5>
+      </div>
+      <div class="grid-100">
+        {{ education.description | markdownify }}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+</article>

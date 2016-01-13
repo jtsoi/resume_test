@@ -1,0 +1,75 @@
+name: Jane Doe
+job_title: Job title
+phone: +1 555 1234 321
+email: jane.doe@example.com
+
+introduction: |
+  Bio here. Markdown is allowed. Break onto new lines if necessary.
+
+  next paragraph
+
+
+skills:
+  - name: Disciplines
+    skills:
+      - discipline 1
+      - discipline 2
+      - discipline 3
+  - name: Business areas
+    skills:
+      - area 1
+      - area 2
+      - area 3
+  - name: Specialties
+    skills:
+      - speciality 1
+      - speciality 2
+      - speciality 3
+  - name: Technologies
+    skills:
+      - tech 1
+      - tech 2
+      - tech 3
+
+projects:
+  - name: Customer name
+    period: 2011 - current
+    org_description: |
+      Customer description, customer description, customer description, customer description, customer description, customer description, customer description, customer description, customer description, customer description, customer description.
+    role_description: |
+      Role description, role description, role description.
+      Role description, role description, role description, role description, role description, role description, role description, role description, role description, role description, role description, role description, role description, role description.
+    technologies:
+      - Tech 1
+      - Tech 2
+      - Tech 3
+      - Tech 4
+      - Tech 5
+      - Tech 6
+
+employments:
+  - name: Organisation name
+    period: 2011 - current
+    org_description: |
+      Organisation description, organisation description, organisation description.
+    role_description: |
+      Role description, role description, role description.
+
+  - name: Organisation name
+    period: 2009 - 2011
+    org_description: |
+      Organisation description, organisation description, organisation description.
+    role_description: |
+      Role description, role description, role description.
+
+education:
+  - name: Institution name
+    period: 2011 - current
+    description: |
+      Description.
+
+  - name: Institution name
+    period: 2009 - 2011
+    description: |
+      Description.
+

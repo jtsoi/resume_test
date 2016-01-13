@@ -1,0 +1,6 @@
+@media print {
+
+  body {
+    font: $text-font-weight #{$text-font-size * 0.8}/#{$text-line-height} $text-font-family;
+  }
+}
